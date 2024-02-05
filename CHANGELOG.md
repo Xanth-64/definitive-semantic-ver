@@ -2,6 +2,9 @@
 
 
 
+## v3.0.0-rc.1 (2024-02-05)
+
+
 ## v2.1.0 (2024-02-05)
 
 ### Feature
@@ -17,6 +20,10 @@
 
 BREAKING CHANGE: This completely eliminates a function from the repository ([`436b45a`](https://github.com/Xanth-64/definitive-semantic-ver/commit/436b45a70877c63bbc5a064eca15245df90a9328))
 
+* fix: Remove unneeded diff function
+
+BREAKING CHANGE: This completely eliminates a function from the repository ([`e472f29`](https://github.com/Xanth-64/definitive-semantic-ver/commit/e472f2903b2620921cbd2fb7351813379b1667b1))
+
 ### Fix
 
 * fix: Corrected nomenclature on PR Branches ([`283228f`](https://github.com/Xanth-64/definitive-semantic-ver/commit/283228f21fe064f813a59d22ae2373736bd130f7))
@@ -26,6 +33,14 @@ BREAKING CHANGE: This completely eliminates a function from the repository ([`43
 * fix: Corrected conditional on bash script ([`a1da5c0`](https://github.com/Xanth-64/definitive-semantic-ver/commit/a1da5c016c6e26329f679e2d18ec20c9ca8a430b))
 
 * fix: Made it so that the breaking changes check looks at all of the commit message ([`fc12542`](https://github.com/Xanth-64/definitive-semantic-ver/commit/fc1254234674f60b78474c4ca71bfd40a3a2126f))
+
+* fix: Corrected nomenclature on PR Branches ([`42726dd`](https://github.com/Xanth-64/definitive-semantic-ver/commit/42726dd1bef82f68b729419181de992dffc2516e))
+
+* fix: Added testing commit ([`e04d815`](https://github.com/Xanth-64/definitive-semantic-ver/commit/e04d815deabd555d28517fa74e5625e0631be687))
+
+* fix: Corrected conditional on bash script ([`0fd1a8d`](https://github.com/Xanth-64/definitive-semantic-ver/commit/0fd1a8d1258de42d5f1618fa9670b3ba0e795227))
+
+* fix: Made it so that the breaking changes check looks at all of the commit message ([`234a3be`](https://github.com/Xanth-64/definitive-semantic-ver/commit/234a3bea563612fc62656e2a4e494f081cf0f6b1))
 
 
 ## v1.7.0 (2024-02-05)
