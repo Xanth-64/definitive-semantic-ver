@@ -2,6 +2,13 @@
 
 
 
+## v1.6.0 (2024-02-05)
+
+### Feature
+
+* feat: Implement workflow to check for breaking changes from non development branches ([`12a630e`](https://github.com/Xanth-64/definitive-semantic-ver/commit/12a630e2340f306576addfbe4c40df52345eeab5))
+
+
 ## v1.5.0 (2024-02-05)
 
 ### Feature
