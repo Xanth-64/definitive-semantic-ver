@@ -22,7 +22,7 @@ jobs:
       - name: Check for Breaking Changes
         id: breaking_changes
         run: |
-          bash ./.github/workflows/scripts/check_breaking_changes.sh $PR_NUMBER $BASE_BRANCH
+          bash ./.github/workflows/scripts/check_breaking_changes.sh $PR_NUMBER $HEAD_BRANCH
         env:
-            PR_NUMBER: ${{ github.event.pull_request.number }}
-            BASE_BRANCH: ${{ github.event.pull_request.base.ref }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          HEAD_BRANCH: ${{ github.event.pull_request.head.ref }}
