@@ -2,6 +2,8 @@
 PR_NUMBER=$1
 BASE_BRANCH=$2
 
+echo "Checking for breaking changes in PR #$PR_NUMBER from $BASE_BRANCH"
+
 # Check for any Commit with the word "BREAKING CHANGE" in the commit message
 git fetch origin +refs/pull/$PR_NUMBER/merge:
 git log --pretty=format:"%B" origin/main..FETCH_HEAD | grep -i "BREAKING CHANGE" > breaking_changes.txt
