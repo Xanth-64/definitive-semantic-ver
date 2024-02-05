@@ -22,11 +22,8 @@ jobs:
       - name: Get PR commits
         id: breaking_changes
         run: |
-          // Fetch the commits for this PR
           git fetch origin +refs/pull/${{ github.event.pull_request.number }}/merge
-          // Do a Git Log looking for the string "BREAKING CHANGE"
           git log --pretty=format:"%s" origin/main..FETCH_HEAD | grep -i "BREAKING CHANGE" > breaking_changes.txt
-          // If the file is empty, exit with a 0
             if [ -s breaking_changes.txt ]; then
                 echo "There are breaking changes"
                 exit 1
