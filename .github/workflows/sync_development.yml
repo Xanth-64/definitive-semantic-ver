@@ -22,6 +22,7 @@ jobs:
 
       - name: Merge and push to development
         run: |
+          git fetch origin development
           git checkout development
           git merge main --no-edit
           git push origin development
