@@ -1,0 +1,28 @@
+name: Major Release Check
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Get PR commits
+        id: breaking_changes
+        run: |
+          git fetch --depth=1 origin +refs/pull/${{ github.event.pull_request.number }}/merge
+          git log --pretty=format:"%s" HEAD...FETCH_HEAD | grep -i "BREAKING CHANGE" > breaking_changes.txt
+
+      - name: If the PR includes a Major Release AND it is not comming from development. Fail the build
+        run: |
+          if [ -s breaking_changes.txt ] && [ "${{ github.event.pull_request.base.ref }}" != "development" ]; then
+            echo "This PR includes a Major Release and it is not coming from development. Please, create a PR from development"
+            exit 1
+          fi
