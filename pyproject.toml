@@ -1,0 +1,108 @@
+[build-system]
+requires = ["setuptools>=42.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = []
+
+[project]
+name = "Semantic Versioning"
+dynamic = [
+  'version'
+]
+description = "Package to test semantic versioning in a Python Project."
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Andres Betancourt", email = "bet.and.xanth@gmail.com"}
+]
+maintainers = [
+  {name = "Andres Betancourt", email = "bet.and.xanth@gmail.com"}
+]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+dependencies = [
+    "boto3",
+    "requests",
+]
+
+[project.optional-dependencies]
+ci = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "pylint>=2.0",
+    "pytest-xdist",
+    "ruff",
+]
+dev = [
+    "ipython",
+    "jupyter",
+    "jupyterlab",
+    "matplotlib==3.5.1",
+    "numpy==1.21.5",
+    "pandas==1.3.5",
+    "python-semantic-release",
+]
+
+[tool.pytest.ini_options]
+addopts = "-n auto --cov=pynala"
+testpaths = [
+    "tests",
+]
+pythonpath = "src"
+
+[tool.mypy]
+mypy_path = "src"
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = true
+
+[tool.ruff]
+line-length = 79
+extend-exclude = ["tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "D4", "PT", "PL"]
+ignore = ["E501", "D401", "D417","PT004", "D407", "PLR2004", "PLR0913"]
+exclude =["__init__.py"]
+
+[tool.ruff.format]
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint.isort]
+force-wrap-aliases = true
+combine-as-imports = true
+
+[tool.coverage.run]
+omit = [
+    "tests/*"
+]
+
+[tool.semantic_release.branches.main]
+match = "(main|master)"
+prerelease = false
+
+[tool.semantic_release.branches.dev]
+match = "(dev|develop|development)"
+prerelease = true
+
+[tool.semantic_release.changelog]
+exclude_commit_patterns = ["Merge"]
