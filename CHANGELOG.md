@@ -2,6 +2,13 @@
 
 
 
+## v1.4.0 (2024-02-05)
+
+### Feature
+
+* feat: Implemented a new Function to Differentiate two numbers ([`8348965`](https://github.com/Xanth-64/definitive-semantic-ver/commit/83489655d5624206e2b8f69f52cb554616aa0c37))
+
+
 ## v1.3.0 (2024-02-05)
 
 ### Feature
