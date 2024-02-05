@@ -6,16 +6,22 @@ on:
       - main
 
 jobs:
-  merge-master-back-to-dev:
-    timeout-minutes: 2
+  sync:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Merge branch
-      uses: devmasx/merge-branch@1.4.0
-      with:
-        from_branch: main
-        target_branch: development
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Configure Git
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+
+      - name: Merge and push to development
+        run: |
+          git checkout development
+          git merge main --no-edit
+          git push origin development
