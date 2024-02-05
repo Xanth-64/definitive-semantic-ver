@@ -10,7 +10,7 @@ on:
       - ready_for_review
 
 jobs:
-  release:
+  major_release_check:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,15 +19,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get PR commits
+      - name: Check for Breaking Changes
         id: breaking_changes
         run: |
           git fetch origin +refs/pull/${{ github.event.pull_request.number }}/merge
           git log --pretty=format:"%s" origin/main..FETCH_HEAD | grep -i "BREAKING CHANGE" > breaking_changes.txt
-            if [ -s breaking_changes.txt ]; then
-                echo "There are breaking changes"
+            # If there are breaking changes and the PR is not comming from development. Fail the build
+            if [ -s breaking_changes.txt ] and [ ${{ github.event.pull_request.base.ref }} != "development" ]; then
+                echo "Breaking Changes Detected on a non-development branch. Please merge into development first."
                 exit 1
             else
-                echo "No breaking changes"
+                echo "No breaking changes. Proceeding with the build."
                 exit 0
             fi
