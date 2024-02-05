@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  repository_dispatch:
+    types: [sync-development]
 
 jobs:
   release:
@@ -24,9 +26,16 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
 
+      - name: Trigger sync-development workflow
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          event-type: sync-development
+
   sync-development:
     runs-on: ubuntu-latest
-    needs: release
+    if: github.event_name == 'repository_dispatch'
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
