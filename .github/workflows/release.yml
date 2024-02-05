@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-  repository_dispatch:
-    types: [sync-development]
 
 jobs:
   release:
@@ -32,23 +30,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
           event-type: sync-development
-
-  sync-development:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'repository_dispatch'
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Configure Git
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-
-      - name: Merge main into development
-        run: |
-          git checkout development
-          git merge main
-          git push origin development
