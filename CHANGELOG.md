@@ -2,6 +2,29 @@
 
 
 
+## v1.7.0 (2024-02-05)
+
+### Chore
+
+* chore: Refactor the checking pipeline into a separate bash file ([`4d5622c`](https://github.com/Xanth-64/definitive-semantic-ver/commit/4d5622cfc1bc52d497f5d7db3ce0c1b51d524395))
+
+* chore: Correct messages around the Major Changes check ([`591a1f2`](https://github.com/Xanth-64/definitive-semantic-ver/commit/591a1f2dee4b8958adbf2a4f22c81f865bc57d93))
+
+### Feature
+
+* feat: Set explicit types of PR Events to listen for ([`cba5d3e`](https://github.com/Xanth-64/definitive-semantic-ver/commit/cba5d3ee6fb16bc9f2d29b17fcac4e48977e02ae))
+
+### Fix
+
+* fix: Bad sustitions fix ([`0c6d327`](https://github.com/Xanth-64/definitive-semantic-ver/commit/0c6d327231e42fc983bfc6e308f1c716cb65cf96))
+
+* fix: Correct variable passing into the script ([`4dedabe`](https://github.com/Xanth-64/definitive-semantic-ver/commit/4dedabe6fc2eafebcd3f94f66b3ca06c80939ea9))
+
+* fix: Remove comments mixed into the code. ([`b801725`](https://github.com/Xanth-64/definitive-semantic-ver/commit/b80172579514b59495ea16f8b108033320b22d7a))
+
+* fix: Correct PR execution when checking for major changes ([`882fc3c`](https://github.com/Xanth-64/definitive-semantic-ver/commit/882fc3c42b3393290883e8c716d0bb0003e09775))
+
+
 ## v1.6.0 (2024-02-05)
 
 ### Feature
