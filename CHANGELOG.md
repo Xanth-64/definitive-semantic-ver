@@ -2,6 +2,19 @@
 
 
 
+## v1.0.3 (2024-02-05)
+
+### Fix
+
+* fix: Unify development synchronization with deployment ([`f760736`](https://github.com/Xanth-64/definitive-semantic-ver/commit/f760736340dca36b309820accd2a0de98fd98fa0))
+
+### Unknown
+
+* Merge pull request #8 from Xanth-64/7-fix-development-sync-once-more
+
+Unify development synchronization with deployment ([`b81f5c3`](https://github.com/Xanth-64/definitive-semantic-ver/commit/b81f5c3a6d36a86ac2f84a100f75d44b9c08a126))
+
+
 ## v1.0.2 (2024-02-05)
 
 ### Fix
