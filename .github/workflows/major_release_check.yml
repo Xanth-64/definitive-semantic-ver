@@ -22,12 +22,15 @@ jobs:
       - name: Get PR commits
         id: breaking_changes
         run: |
-          git fetch --depth=1 origin +refs/pull/${{ github.event.pull_request.number }}/merge
-          git log --pretty=format:"%s" HEAD...FETCH_HEAD | grep -i "BREAKING CHANGE" > breaking_changes.txt
-
-      - name: If the PR includes a Major Release AND it is not comming from development. Fail the build
-        run: |
-          if [ -s breaking_changes.txt ] && [ "${{ github.event.pull_request.base.ref }}" != "development" ]; then
-            echo "This PR includes a Major Release and it is not coming from development. Please, create a PR from development"
-            exit 1
-          fi
+          // Fetch the commits for this PR
+          git fetch origin +refs/pull/${{ github.event.pull_request.number }}/merge
+          // Do a Git Log looking for the string "BREAKING CHANGE"
+          git log --pretty=format:"%s" origin/main..FETCH_HEAD | grep -i "BREAKING CHANGE" > breaking_changes.txt
+          // If the file is empty, exit with a 0
+            if [ -s breaking_changes.txt ]; then
+                echo "There are breaking changes"
+                exit 1
+            else
+                echo "No breaking changes"
+                exit 0
+            fi
