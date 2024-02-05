@@ -2,6 +2,19 @@
 
 
 
+## v1.1.1 (2024-02-05)
+
+### Fix
+
+* fix: Correct development synchronization task once more ([`009eefd`](https://github.com/Xanth-64/definitive-semantic-ver/commit/009eefd13207c73f78115849bebf872c93e28306))
+
+### Unknown
+
+* Merge pull request #14 from Xanth-64/13-fix-development-sync-task-again
+
+Correct development synchronization task ([`f22c6c6`](https://github.com/Xanth-64/definitive-semantic-ver/commit/f22c6c694030c524096418f41f41431efa00d2dc))
+
+
 ## v1.1.0 (2024-02-05)
 
 ### Feature
