@@ -2,6 +2,19 @@
 
 
 
+## v1.0.4 (2024-02-05)
+
+### Fix
+
+* fix: Correct release workflow parameter ([`f07921f`](https://github.com/Xanth-64/definitive-semantic-ver/commit/f07921fb4532908ef0aaa2444e20821c8593cbe0))
+
+### Unknown
+
+* Merge pull request #10 from Xanth-64/9-fix-merge-action
+
+fix: Correct release workflow parameter ([`0e69376`](https://github.com/Xanth-64/definitive-semantic-ver/commit/0e6937668c63e5550e93b102ebaf732146c3acc1))
+
+
 ## v1.0.3 (2024-02-05)
 
 ### Fix
