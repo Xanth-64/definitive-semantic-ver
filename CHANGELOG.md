@@ -2,6 +2,19 @@
 
 
 
+## v1.2.0 (2024-02-05)
+
+### Feature
+
+* feat: Made synchronization action run on a repository_dispatch event ([`714e702`](https://github.com/Xanth-64/definitive-semantic-ver/commit/714e7020d4f14b33acc86a17a99d048e1f0470a9))
+
+### Unknown
+
+* Merge pull request #18 from Xanth-64/17-modify-synchronization-workflow-so-that-it-runs-on-a-dispatch-event
+
+Made synchronization action run on a repository_dispatch event ([`44b51cf`](https://github.com/Xanth-64/definitive-semantic-ver/commit/44b51cf374605b2d329dbfa9cd349c1dc8a9c014))
+
+
 ## v1.1.2 (2024-02-05)
 
 ### Fix
