@@ -2,6 +2,19 @@
 
 
 
+## v1.1.0 (2024-02-05)
+
+### Feature
+
+* feat: Implement sum function ([`3b37972`](https://github.com/Xanth-64/definitive-semantic-ver/commit/3b3797271d668048d49c927bb59d158e658e4d9d))
+
+### Unknown
+
+* Merge pull request #12 from Xanth-64/11-implement-new-math-package
+
+Implement sum function ([`2046076`](https://github.com/Xanth-64/definitive-semantic-ver/commit/204607691b6939868b6175fb58c96ae90d28a957))
+
+
 ## v1.0.4 (2024-02-05)
 
 ### Fix
