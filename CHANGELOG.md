@@ -2,6 +2,19 @@
 
 
 
+## v1.3.0 (2024-02-05)
+
+### Feature
+
+* feat: Separate Deployment and Synchronization workflows ([`838efdc`](https://github.com/Xanth-64/definitive-semantic-ver/commit/838efdcee9a948a74904113e6a2c607d6cb48799))
+
+### Unknown
+
+* Merge pull request #20 from Xanth-64/19-separate-development-sync-and-deployment-workflows
+
+Separate Deployment and Synchronization workflows ([`2203a51`](https://github.com/Xanth-64/definitive-semantic-ver/commit/2203a51727101f369e05cd065ae78f973a5ab4f4))
+
+
 ## v1.2.0 (2024-02-05)
 
 ### Feature
