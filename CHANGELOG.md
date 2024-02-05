@@ -2,6 +2,13 @@
 
 
 
+## v1.5.0 (2024-02-05)
+
+### Feature
+
+* feat: Implemented new multiplication function. ([`4cfcbda`](https://github.com/Xanth-64/definitive-semantic-ver/commit/4cfcbda91397cb650a1108c93a7d77581d61ce23))
+
+
 ## v1.4.0 (2024-02-05)
 
 ### Feature
