@@ -2,6 +2,19 @@
 
 
 
+## v1.0.2 (2024-02-05)
+
+### Fix
+
+* fix: Add fetch instruction to sync workflow ([`60e1b6f`](https://github.com/Xanth-64/definitive-semantic-ver/commit/60e1b6f76fe0d74368420792fe8e770098a14f91))
+
+### Unknown
+
+* Merge pull request #6 from Xanth-64/5-fix-development-sync-again
+
+Add fetch instruction to sync workflow ([`6b073b1`](https://github.com/Xanth-64/definitive-semantic-ver/commit/6b073b19abbc057c4b6a9082c7b4ba17e720da14))
+
+
 ## v1.0.1 (2024-02-05)
 
 ### Fix
