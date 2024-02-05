@@ -2,6 +2,19 @@
 
 
 
+## v1.1.2 (2024-02-05)
+
+### Fix
+
+* fix: Added missing symbol to sync task ([`bee0fb2`](https://github.com/Xanth-64/definitive-semantic-ver/commit/bee0fb23f0c7a10ab730f445d4ff72a48217b498))
+
+### Unknown
+
+* Merge pull request #16 from Xanth-64/15-sync-task-missing-symbol
+
+fix: Added missing symbol to sync task ([`b16f1fb`](https://github.com/Xanth-64/definitive-semantic-ver/commit/b16f1fbe4740fa56a17fed62ce897c149d925f39))
+
+
 ## v1.1.1 (2024-02-05)
 
 ### Fix
