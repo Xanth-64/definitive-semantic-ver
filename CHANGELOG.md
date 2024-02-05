@@ -2,6 +2,19 @@
 
 
 
+## v1.0.1 (2024-02-05)
+
+### Fix
+
+* fix: Correct task to sync changes from main to development automatically ([`cb32432`](https://github.com/Xanth-64/definitive-semantic-ver/commit/cb324325ae911c95c3f7e4ff1c4da4f1c7fc3e02))
+
+### Unknown
+
+* Merge pull request #4 from Xanth-64/3-fix-development-merge
+
+Correct task to sync changes from main to development automatically ([`8ba0b0e`](https://github.com/Xanth-64/definitive-semantic-ver/commit/8ba0b0ebee4b9ddab19bc518ff9ccfe1ef11fd4f))
+
+
 ## v1.0.0 (2024-02-05)
 
 ### Breaking
