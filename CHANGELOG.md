@@ -2,6 +2,17 @@
 
 
 
+## v2.2.0 (2024-02-06)
+
+### Feature
+
+* feat: Implemented new Authentication Scheme ([`163a0f0`](https://github.com/Xanth-64/definitive-semantic-ver/commit/163a0f011722843b92f20b2ad2c60ead37e40cf7))
+
+### Fix
+
+* fix: Correct GitHub Token Issue properly ([`89e04cc`](https://github.com/Xanth-64/definitive-semantic-ver/commit/89e04cc90b836c55582d6695688226ecc8435043))
+
+
 ## v2.1.0 (2024-02-05)
 
 ### Feature
