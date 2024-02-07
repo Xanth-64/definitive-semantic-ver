@@ -2,6 +2,13 @@
 
 
 
+## v2.3.1 (2024-02-07)
+
+### Fix
+
+* fix: Avoid duplicit job execution ([`287003c`](https://github.com/Xanth-64/definitive-semantic-ver/commit/287003c43cd3a3e60028979999be4193c577469c))
+
+
 ## v2.3.0 (2024-02-07)
 
 ### Feature
