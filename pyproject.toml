@@ -95,6 +95,8 @@ combine-as-imports = true
 omit = [
     "tests/*"
 ]
+[tool.semantic_release]
+commit_message = "build(release):{version} [skip ci]"
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
