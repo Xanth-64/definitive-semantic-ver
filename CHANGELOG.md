@@ -2,6 +2,13 @@
 
 
 
+## v2.3.0 (2024-02-07)
+
+### Feature
+
+* feat: Implemented multiplication function ([`72a9cff`](https://github.com/Xanth-64/definitive-semantic-ver/commit/72a9cff1dd3599b1b1949bed661c4ddb308b2ccb))
+
+
 ## v2.2.0 (2024-02-06)
 
 ### Feature
