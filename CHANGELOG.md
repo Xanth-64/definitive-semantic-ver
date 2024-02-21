@@ -2,11 +2,22 @@
 
 
 
+## v2.4.0 (2024-02-21)
+
+### Feature
+
+* feat: Implement diff method ([`ee6fed3`](https://github.com/Xanth-64/definitive-semantic-ver/commit/ee6fed33bcda247efedb4688bc4fab104cac15a0))
+
+
 ## v2.3.2 (2024-02-07)
 
 ### Fix
 
 * fix: Make better avoidal of duplicit job execution ([`0e485c8`](https://github.com/Xanth-64/definitive-semantic-ver/commit/0e485c810f985a1e3979fb9f86e943b1f6ff3f26))
+
+### Unknown
+
+* build(release):2.3.2 [skip ci] ([`afd3e40`](https://github.com/Xanth-64/definitive-semantic-ver/commit/afd3e401b6863367b8a9ff198c8a572b450da762))
 
 
 ## v2.3.1 (2024-02-07)
