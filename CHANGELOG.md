@@ -2,11 +2,22 @@
 
 
 
+## v2.5.0 (2024-02-28)
+
+### Feature
+
+* feat: Implements Exponentiation Function ([`932c6cb`](https://github.com/Xanth-64/definitive-semantic-ver/commit/932c6cbe08db1f3026c9b719048d2605dd5f2341))
+
+
 ## v2.4.0 (2024-02-21)
 
 ### Feature
 
 * feat: Implement diff method ([`ee6fed3`](https://github.com/Xanth-64/definitive-semantic-ver/commit/ee6fed33bcda247efedb4688bc4fab104cac15a0))
+
+### Unknown
+
+* build(release):2.4.0 [skip ci] ([`5e74351`](https://github.com/Xanth-64/definitive-semantic-ver/commit/5e74351bf4e33cb01123b5287113d4635ed1571c))
 
 
 ## v2.3.2 (2024-02-07)
